@@ -1,0 +1,99 @@
+
+.principal {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-columns: 100px 400px 150px;
+    grid-template-areas: "cabecalho cabecalho";
+}
+
+/* Cabeçalho */
+header {
+    grid-area: cabecalho;
+    background-color: aqua;
+}
+.principal {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 100px 450px 150px;
+    grid-template-areas: "cabecalho cabecalho" 
+                         "secao barra-lateral" 
+                         "rodape rodape";
+}
+
+header {
+   grid-area: cabecalho;
+   display: flex;
+   background-color: #000000;
+}
+
+/* Separações do Cabeçalho */
+
+.fun0 {
+    width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fun1 {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cabecalhos {
+    margin: auto;
+    font-size: 18px;
+    margin-top: 7%;
+}
+
+/* Barra de Conteudo */
+section {
+    grid-area: secao;
+    background-color: #99f1ed;
+ }
+
+ /* Barra secundário conteudos */
+ aside {
+    grid-area: barra-lateral;
+    background-color: #5cd9e2;
+ }
+
+ /* Rodapé*/
+ footer {
+    grid-area: rodape;
+ }
+
+  footer {
+    grid-area: rodape;
+    display: flex;
+    justify-content: space-evenly;
+ }
+
+ /* Separações do Rodapé */
+
+ .parte1, .parte2, .parte3 {
+    width: 25%;
+    background-color: #1b7b88;
+ }
+
+ .parte2 {
+    width: 50%;
+ }
+
+ .parte3 {
+    margin: 0;
+ }
+
+ /* Estilização */
+
+ h1 {
+    color: #ffffff;
+ }
+
+ p {
+    color: #000000;
+ }
