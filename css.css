@@ -1,11 +1,4 @@
-principal {
-    width: 100%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 75% 25%;
-    grid-template-columns: 120px 400px 150px;
-    grid-template-areas: "cabecalho cabecalho";
-}
+
 
 body {
     background-color: #bbfaff;
@@ -15,11 +8,13 @@ body {
     width: 100%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 75% 25%;
-    grid-template-rows: 120px 640px 180px;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 120px 1040px 180px;
     grid-template-areas: "cabecalho cabecalho" 
                          "secao barra-lateral" 
                          "rodape rodape";
+   flex-wrap: wrap;
+   box-sizing: border-box;
 }
 
 
@@ -28,7 +23,8 @@ header {
     grid-area: cabecalho;
     display: flex;
     height: 100%;
-    background-color: #000000;
+    background-color: #35034d;
+    
 }
 
 /* Separações do Cabeçalho */
@@ -43,18 +39,20 @@ header {
     width: 70%;
     display: flex;
     flex-wrap: wrap;
+   
 }
 
 .cabecalhos {
     margin: auto;
     font-size: 18px;
-    margin-top: 5%;
+    margin-top: 7%;
 }
 
 /* Barra de Conteudo */
 section {
     grid-area: secao;
-    width: 15%;
+    width: 120%;
+    height: 100%;
     background-color: #99f1ed;
  }
 
@@ -64,38 +62,48 @@ section {
     background-color: #5cd9e2;
  }
 
- /* Rodapé*/
- footer {
-    grid-area: rodape;
-    grid-area: rodape;
-    display: flex;
-    justify-content: space-evenly;
-    height: 85%;
- }
-
- /* Separações do Rodapé */
-
- .parte1, .parte2, .parte3 {
-    width: 35%;
-    background-color: #1b7b88;
- }
-
- .parte2 {
-    width: 50%;
- }
-
- .parte3 {
-    margin: 0;
- }
-
  /* Estilização Textos */
 
  h1, a {
     color: #ffffff;
     text-decoration: none;
+    
  }
 
  p {
     color: #000000;
-    margin-left: 25%;
+    margin-left: 1%;
  }
+
+ h3 {
+   color: #000000;
+   margin-left: 25%;
+}
+
+ h2 {
+   margin-left: 10%;
+ }
+  /* Rodapé*/
+  footer {
+   grid-area: rodape;
+   grid-area: rodape;
+   display: flex;
+   justify-content: space-evenly;
+   height: 100%;
+   box-sizing: border-box;
+}
+
+/* Separações do Rodapé */
+
+.parte1, .parte2, .parte3 {
+   width: 35%;
+   background-color: #1b7b88;
+}
+
+.parte2 {
+   width: 50%;
+}
+
+.parte3 {
+   margin: 0;
+}
